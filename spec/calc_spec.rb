@@ -20,4 +20,16 @@ describe "Calculator" do
       expect(calc.add(3, 5)).to eq(8)
     end
   end
+
+  describe "#subtract" do
+    it "subtracts a number from another number" do
+      calc = Calculator.new
+      expect(calc.subtract(5, 3)).to eq(2)
+    end
+
+    it "can subtract any 2 numbers" do
+      calc = Calculator.new
+      expect(calc.subtract(20, 14)).to eq(6)
+    end
+  end
 end
