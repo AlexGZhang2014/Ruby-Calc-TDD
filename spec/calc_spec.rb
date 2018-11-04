@@ -22,12 +22,12 @@ describe "Calculator" do
   end
 
   describe "#subtract" do
-    it "subtracts a number from another number" do
+    it "subtracts the first number from the second number" do
       calc = Calculator.new
       expect(calc.subtract(5, 3)).to eq(2)
     end
 
-    it "can subtract any 2 numbers" do
+    it "can subtract given any 2 numbers" do
       calc = Calculator.new
       expect(calc.subtract(20, 14)).to eq(6)
     end
