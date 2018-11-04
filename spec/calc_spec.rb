@@ -32,4 +32,16 @@ describe "Calculator" do
       expect(calc.subtract(20, 14)).to eq(6)
     end
   end
+
+  describe "#multiply" do
+    it "multiplies 2 numbers together" do
+      calc = Calculator.new
+      expect(calc.multiply(4, 5)).to eq(20)
+    end
+
+    it "can multiply any 2 numbers together" do
+      calc = Calculator.new
+      expect(calc.multiply(30, 12)).to eq(360)
+    end
+  end
 end
