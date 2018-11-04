@@ -44,4 +44,16 @@ describe "Calculator" do
       expect(calc.multiply(30, 12)).to eq(360)
     end
   end
+
+  describe "#divide" do
+    it "divides the first number by the second number" do
+      calc = Calculator.new
+      expect(calc.divide(44, 11)).to eq(4)
+    end
+
+    it "can divide given any 2 numbers" do
+      calc = Calculator.new
+      expect(calc.divide(-120, 5)).to eq(-24)
+    end
+  end
 end
